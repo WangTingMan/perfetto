@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fe21ac81-dc18-48cd-8645-6fd269761405}</ProjectGuid>
+    <RootNamespace>libperfettoc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../include;$(ProjectDir)../../;$(ProjectDir)../../generated;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LIBPERFETTOC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;LIBPERFETTOC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;LIBPERFETTOC_EXPORTS;_WINDOWS;_USRDLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;PERFETTO_SHLIB_SDK_IMPLEMENTATION;_CRT_NONSTDC_NO_WARNINGS;PERFETTO_IMPLEMENTATION;_SILENCE_CXX20_OLD_SHARED_PTR_ATOMIC_SUPPORT_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;LIBPERFETTOC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_energy_consumer_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_energy_consumer_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_log_constants.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_log_constants.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\builtin_clock.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\builtin_clock.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\commit_data_request.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\commit_data_request.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\data_source_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\data_source_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\ftrace_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\ftrace_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\gpu_counter_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\gpu_counter_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\interceptor_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\interceptor_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\observable_events.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\observable_events.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\perf_events.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\perf_events.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\protolog_common.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\protolog_common.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\sys_stats_counters.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\sys_stats_counters.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\trace_stats.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\trace_stats.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_capabilities.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_capabilities.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_state.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_state.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\track_event_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\common\track_event_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_game_intervention_list_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_input_event_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_log_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_polled_state_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_sdk_sysprop_guard_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_system_property_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\network_trace_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\packages_list_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\pixel_modem_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\protolog_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_layers_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_transactions_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\chrome_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\scenario_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\v8_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\data_source_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\etw\etw_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\ftrace\ftrace_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\gpu\gpu_counter_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\gpu\vulkan_memory_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\inode_file\inode_file_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\interceptors\console_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\interceptor_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\power\android_power_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\process_stats\process_stats_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\heapprofd_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\java_hprof_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\perf_event_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\statsd\atom_ids.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\statsd\statsd_tracing_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\stress_test_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\system_info\system_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\sys_stats\sys_stats_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\test_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\trace_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\config\track_event\track_event_config.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\consumer_port.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\consumer_port.ipc.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\producer_port.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\producer_port.ipc.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\relay_port.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\relay_port.ipc.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\wire_protocol.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_game_intervention_list.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_log.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_system_property.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\camera_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\frame_timeline_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\gpu_mem_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics\point.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics\rect.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics_frame_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\initial_display_state.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\network_trace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\packages_list.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\pixel_modem_events.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\protolog.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\shell_transition.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_common.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_layers.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_transactions.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\winscope_extensions.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_benchmark_metadata.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_metadata.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trace_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trigger.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\v8.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\clock_snapshot.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw_event_bundle.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\extension_descriptor.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\filesystem\inode_file_map.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\android_fs.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\bcl_exynos.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\binder.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\block.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cgroup.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\clk.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cma.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\compaction.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cpuhp.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cros_ec.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dcvsh.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dmabuf_heap.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dma_fence.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dpu.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\drm.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ext4.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\f2fs.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\fastrpc.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\fence.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\filemap.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event_bundle.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_stats.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\g2d.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\generic.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\google_icc_trace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\google_irm_trace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_mem.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_scheduler.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\hyp.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\i2c.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ion.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ipi.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\irq.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kgsl.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kmem.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kvm.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\lowmemorykiller.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\lwis.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mali.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mdss.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mm_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\net.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\oom.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\panel.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\perf_trace_counters.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\power.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\printk.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\raw_syscalls.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\regulator.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\rpm.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\samsung.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sched.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\scm.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sde.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\signal.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\skb.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sock.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sync.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\synthetic.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\systrace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\task.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\tcp.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\test_bundle_wrapper.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\thermal.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\thermal_exynos.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\trusty.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ufs.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\v4l2.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_gpu.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_video.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\vmscan.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\workqueue.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_counter_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_log.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_render_stage_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_api_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_memory_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\interned_data\interned_data.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\memory_graph.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\perfetto\perfetto_metatrace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\perfetto\tracing_service_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\android_energy_estimation_breakdown.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\android_entity_state_residency.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\battery_counters.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\power_rails.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\deobfuscation.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\heap_graph.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\profile_common.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\profile_packet.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\smaps.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ps\process_stats.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ps\process_tree.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\remote_clock_sync.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\statsd\ostats_data.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\statsd\statsd_atom.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\system_info.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\system_info\cpu_info.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\sys_stats\sys_stats.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\test_event.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\test_extensions.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_packet.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_packet_defaults.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_uuid.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_active_processes.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_application_state_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_compositor_scheduler_state.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_content_settings_event_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_frame_reporter.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_histogram_sample.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_keyed_service.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_latency_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_legacy_ipc.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_message_pump.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_mojo_event_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_process_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_renderer_scheduler_state.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_thread_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_user_event.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_window_handle_event_info.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\counter_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\debug_annotation.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\log_message.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\pixel_modem.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\process_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\range_of_interest.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\screenshot.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\source_location.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\task_execution.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\thread_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\track_descriptor.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\track_event.gen.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trigger.pbzero.cc" />
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ui_state.pbzero.cc" />
+    <ClCompile Include="..\..\src\android_internal\lazy_library_loader.cc" />
+    <ClCompile Include="..\..\src\android_stats\statsd_logging_helper.cc" />
+    <ClCompile Include="..\..\src\base\android_utils.cc" />
+    <ClCompile Include="..\..\src\base\base64.cc" />
+    <ClCompile Include="..\..\src\base\crash_keys.cc" />
+    <ClCompile Include="..\..\src\base\ctrl_c_handler.cc" />
+    <ClCompile Include="..\..\src\base\default_platform.cc" />
+    <ClCompile Include="..\..\src\base\event_fd.cc" />
+    <ClCompile Include="..\..\src\base\file_utils.cc" />
+    <ClCompile Include="..\..\src\base\getopt_compat.cc" />
+    <ClCompile Include="..\..\src\base\logging.cc" />
+    <ClCompile Include="..\..\src\base\metatrace.cc" />
+    <ClCompile Include="..\..\src\base\paged_memory.cc" />
+    <ClCompile Include="..\..\src\base\periodic_task.cc" />
+    <ClCompile Include="..\..\src\base\pipe.cc" />
+    <ClCompile Include="..\..\src\base\scoped_mmap.cc" />
+    <ClCompile Include="..\..\src\base\status.cc" />
+    <ClCompile Include="..\..\src\base\string_splitter.cc" />
+    <ClCompile Include="..\..\src\base\string_utils.cc" />
+    <ClCompile Include="..\..\src\base\string_view.cc" />
+    <ClCompile Include="..\..\src\base\subprocess.cc" />
+    <ClCompile Include="..\..\src\base\subprocess_posix.cc" />
+    <ClCompile Include="..\..\src\base\subprocess_windows.cc" />
+    <ClCompile Include="..\..\src\base\temp_file.cc" />
+    <ClCompile Include="..\..\src\base\thread_checker.cc" />
+    <ClCompile Include="..\..\src\base\thread_task_runner.cc" />
+    <ClCompile Include="..\..\src\base\thread_utils.cc" />
+    <ClCompile Include="..\..\src\base\time.cc" />
+    <ClCompile Include="..\..\src\base\unix_socket.cc" />
+    <ClCompile Include="..\..\src\base\unix_task_runner.cc" />
+    <ClCompile Include="..\..\src\base\utils.cc" />
+    <ClCompile Include="..\..\src\base\uuid.cc" />
+    <ClCompile Include="..\..\src\base\version.cc" />
+    <ClCompile Include="..\..\src\base\virtual_destructors.cc" />
+    <ClCompile Include="..\..\src\base\waitable_event.cc" />
+    <ClCompile Include="..\..\src\base\watchdog_posix.cc" />
+    <ClCompile Include="..\..\src\ipc\buffered_frame_deserializer.cc" />
+    <ClCompile Include="..\..\src\ipc\client_impl.cc" />
+    <ClCompile Include="..\..\src\ipc\deferred.cc" />
+    <ClCompile Include="..\..\src\ipc\host_impl.cc" />
+    <ClCompile Include="..\..\src\ipc\service_proxy.cc" />
+    <ClCompile Include="..\..\src\ipc\virtual_destructors.cc" />
+    <ClCompile Include="..\..\src\protozero\field.cc" />
+    <ClCompile Include="..\..\src\protozero\filtering\filter_bytecode_parser.cc" />
+    <ClCompile Include="..\..\src\protozero\filtering\message_filter.cc" />
+    <ClCompile Include="..\..\src\protozero\filtering\string_filter.cc" />
+    <ClCompile Include="..\..\src\protozero\gen_field_helpers.cc" />
+    <ClCompile Include="..\..\src\protozero\message.cc" />
+    <ClCompile Include="..\..\src\protozero\message_arena.cc" />
+    <ClCompile Include="..\..\src\protozero\packed_repeated_fields.cc" />
+    <ClCompile Include="..\..\src\protozero\proto_decoder.cc" />
+    <ClCompile Include="..\..\src\protozero\scattered_heap_buffer.cc" />
+    <ClCompile Include="..\..\src\protozero\scattered_stream_null_delegate.cc" />
+    <ClCompile Include="..\..\src\protozero\scattered_stream_writer.cc" />
+    <ClCompile Include="..\..\src\protozero\static_buffer.cc" />
+    <ClCompile Include="..\..\src\protozero\virtual_destructors.cc" />
+    <ClCompile Include="..\..\src\shared_lib\data_source.cc" />
+    <ClCompile Include="..\..\src\shared_lib\heap_buffer.cc" />
+    <ClCompile Include="..\..\src\shared_lib\intern_map.cc" />
+    <ClCompile Include="..\..\src\shared_lib\pb_decoder.cc" />
+    <ClCompile Include="..\..\src\shared_lib\producer.cc" />
+    <ClCompile Include="..\..\src\shared_lib\stream_writer.cc" />
+    <ClCompile Include="..\..\src\shared_lib\thread_utils.cc" />
+    <ClCompile Include="..\..\src\shared_lib\track_event.cc" />
+    <ClCompile Include="..\..\src\tracing\console_interceptor.cc" />
+    <ClCompile Include="..\..\src\tracing\core\clock_snapshots.cc" />
+    <ClCompile Include="..\..\src\tracing\core\id_allocator.cc" />
+    <ClCompile Include="..\..\src\tracing\core\in_process_shared_memory.cc" />
+    <ClCompile Include="..\..\src\tracing\core\null_trace_writer.cc" />
+    <ClCompile Include="..\..\src\tracing\core\shared_memory_abi.cc" />
+    <ClCompile Include="..\..\src\tracing\core\shared_memory_arbiter_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\core\trace_packet.cc" />
+    <ClCompile Include="..\..\src\tracing\core\trace_writer_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\core\virtual_destructors.cc" />
+    <ClCompile Include="..\..\src\tracing\data_source.cc" />
+    <ClCompile Include="..\..\src\tracing\debug_annotation.cc" />
+    <ClCompile Include="..\..\src\tracing\event_context.cc" />
+    <ClCompile Include="..\..\src\tracing\interceptor.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\checked_scope.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\interceptor_trace_writer.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\in_process_tracing_backend.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\system_tracing_backend.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\tracing_backend_fake.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\tracing_muxer_fake.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\tracing_muxer_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\track_event_internal.cc" />
+    <ClCompile Include="..\..\src\tracing\internal\track_event_interned_fields.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\consumer\consumer_ipc_client_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\default_socket.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\memfd.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\posix_shared_memory.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\producer\producer_ipc_client_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\service\consumer_ipc_service.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\service\producer_ipc_service.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\service\relay_ipc_service.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\service\service_ipc_host_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\ipc\shared_memory_windows.cc" />
+    <ClCompile Include="..\..\src\tracing\platform.cc" />
+    <ClCompile Include="..\..\src\tracing\platform_posix.cc" />
+    <ClCompile Include="..\..\src\tracing\platform_windows.cc" />
+    <ClCompile Include="..\..\src\tracing\service\metatrace_writer.cc" />
+    <ClCompile Include="..\..\src\tracing\service\packet_stream_validator.cc" />
+    <ClCompile Include="..\..\src\tracing\service\trace_buffer.cc" />
+    <ClCompile Include="..\..\src\tracing\service\tracing_service_impl.cc" />
+    <ClCompile Include="..\..\src\tracing\traced_value.cc" />
+    <ClCompile Include="..\..\src\tracing\trace_writer_base.cc" />
+    <ClCompile Include="..\..\src\tracing\tracing.cc" />
+    <ClCompile Include="..\..\src\tracing\tracing_policy.cc" />
+    <ClCompile Include="..\..\src\tracing\track.cc" />
+    <ClCompile Include="..\..\src\tracing\track_event_category_registry.cc" />
+    <ClCompile Include="..\..\src\tracing\track_event_legacy.cc" />
+    <ClCompile Include="..\..\src\tracing\track_event_state_tracker.cc" />
+    <ClCompile Include="..\..\src\tracing\virtual_destructors.cc" />
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_game_intervention_list_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_input_event_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_log_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_polled_state_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_sdk_sysprop_guard_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_system_property_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\network_trace_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\packages_list_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\pixel_modem_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\protolog_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_layers_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_transactions_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\chrome_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\scenario_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\v8_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\data_source_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\etw\etw_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\ftrace\ftrace_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\gpu\gpu_counter_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\gpu\vulkan_memory_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\inode_file\inode_file_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\interceptors\console_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\interceptor_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\power\android_power_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\process_stats\process_stats_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\heapprofd_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\java_hprof_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\perf_event_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\statsd\atom_ids.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\statsd\statsd_tracing_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\stress_test_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\system_info\system_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\sys_stats\sys_stats_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\test_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\trace_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\config\track_event\track_event_config.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\consumer_port.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\consumer_port.ipc.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\producer_port.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\producer_port.ipc.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\relay_port.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\relay_port.ipc.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\wire_protocol.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_game_intervention_list.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_log.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_system_property.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\camera_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\frame_timeline_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\gpu_mem_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics\point.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics\rect.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics_frame_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\initial_display_state.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\network_trace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\packages_list.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\pixel_modem_events.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\protolog.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\shell_transition.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_common.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_layers.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_transactions.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\winscope_extensions.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_benchmark_metadata.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_metadata.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trace_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trigger.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\v8.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\clock_snapshot.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw_event_bundle.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\extension_descriptor.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\filesystem\inode_file_map.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\android_fs.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\bcl_exynos.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\binder.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\block.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cgroup.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\clk.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cma.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\compaction.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cpuhp.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cros_ec.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dcvsh.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dmabuf_heap.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dma_fence.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dpu.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\drm.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ext4.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\f2fs.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\fastrpc.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\fence.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\filemap.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event_bundle.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_stats.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\g2d.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\generic.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\google_icc_trace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\google_irm_trace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_mem.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_scheduler.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\hyp.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\i2c.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ion.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ipi.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\irq.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kgsl.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kmem.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kvm.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\lowmemorykiller.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\lwis.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mali.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mdss.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mm_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\net.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\oom.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\panel.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\perf_trace_counters.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\power.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\printk.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\raw_syscalls.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\regulator.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\rpm.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\samsung.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sched.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\scm.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sde.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\signal.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\skb.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sock.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sync.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\synthetic.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\systrace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\task.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\tcp.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\test_bundle_wrapper.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\thermal.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\thermal_exynos.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\trusty.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ufs.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\v4l2.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_gpu.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_video.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\vmscan.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\workqueue.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_counter_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_log.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_render_stage_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_api_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_memory_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\interned_data\interned_data.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\memory_graph.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\perfetto\perfetto_metatrace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\perfetto\tracing_service_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\android_energy_estimation_breakdown.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\android_entity_state_residency.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\battery_counters.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\power_rails.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\deobfuscation.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\heap_graph.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\profile_common.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\profile_packet.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\smaps.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ps\process_stats.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ps\process_tree.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\remote_clock_sync.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\statsd\ostats_data.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\statsd\statsd_atom.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\system_info.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\system_info\cpu_info.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\sys_stats\sys_stats.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\test_event.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\test_extensions.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_packet.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_packet_defaults.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_uuid.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_active_processes.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_application_state_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_compositor_scheduler_state.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_content_settings_event_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_frame_reporter.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_histogram_sample.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_keyed_service.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_latency_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_legacy_ipc.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_message_pump.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_mojo_event_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_process_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_renderer_scheduler_state.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_thread_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_user_event.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_window_handle_event_info.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\counter_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\debug_annotation.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\log_message.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\pixel_modem.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\process_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\range_of_interest.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\screenshot.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\source_location.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\task_execution.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\thread_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\track_descriptor.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\track_event.gen.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trigger.pbzero.h" />
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ui_state.pbzero.h" />
+    <ClInclude Include="..\..\src\android_internal\lazy_library_loader.h" />
+    <ClInclude Include="..\..\src\android_stats\perfetto_atoms.h" />
+    <ClInclude Include="..\..\src\android_stats\statsd_logging_helper.h" />
+    <ClInclude Include="..\..\src\base\vm_sockets.h" />
+    <ClInclude Include="..\..\src\ipc\buffered_frame_deserializer.h" />
+    <ClInclude Include="..\..\src\ipc\client_impl.h" />
+    <ClInclude Include="..\..\src\ipc\host_impl.h" />
+    <ClInclude Include="..\..\src\protozero\filtering\filter_bytecode_parser.h" />
+    <ClInclude Include="..\..\src\protozero\filtering\message_filter.h" />
+    <ClInclude Include="..\..\src\protozero\filtering\string_filter.h" />
+    <ClInclude Include="..\..\src\shared_lib\intern_map.h" />
+    <ClInclude Include="..\..\src\shared_lib\stream_writer.h" />
+    <ClInclude Include="..\..\src\tracing\core\id_allocator.h" />
+    <ClInclude Include="..\..\src\tracing\core\in_process_shared_memory.h" />
+    <ClInclude Include="..\..\src\tracing\core\null_trace_writer.h" />
+    <ClInclude Include="..\..\src\tracing\core\shared_memory_arbiter_impl.h" />
+    <ClInclude Include="..\..\src\tracing\core\trace_writer_impl.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\consumer\consumer_ipc_client_impl.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\memfd.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\producer\producer_ipc_client_impl.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\service\consumer_ipc_service.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\service\producer_ipc_service.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\service\relay_ipc_service.h" />
+    <ClInclude Include="..\..\src\tracing\ipc\service\service_ipc_host_impl.h" />
+    <ClInclude Include="..\..\src\tracing\service\metatrace_writer.h" />
+    <ClInclude Include="..\..\src\tracing\service\packet_stream_validator.h" />
+    <ClInclude Include="..\..\src\tracing\service\trace_buffer.h" />
+    <ClInclude Include="..\..\src\tracing\service\tracing_service_impl.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="perfetto_src_shared_lib_shared_lib">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_client_api_without_backends">
+      <UniqueIdentifier>{9a705644-9816-46a5-9976-69355466c18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_client_api_without_backends\internal">
+      <UniqueIdentifier>{68edb74a-a107-4971-a5b9-f38b4641ae19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_base_default_platform">
+      <UniqueIdentifier>{f2ca6cf8-94dc-4d7d-8ccd-f5b6322a14e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen">
+      <UniqueIdentifier>{66d2474b-5e54-4c51-9437-17986b5d6883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_common_cpp_gen">
+      <UniqueIdentifier>{a9bb32f8-95fd-4244-86a2-426b482b6b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_profiling_zero_gen">
+      <UniqueIdentifier>{69f0c453-c7dd-4b6f-87e8-20100ddeb4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_power_zero_gen">
+      <UniqueIdentifier>{76055a26-5587-4e28-ac25-bc4e077cfa84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_perfetto_zero_gen">
+      <UniqueIdentifier>{3629e4af-f696-4243-a535-e9827ed50bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen">
+      <UniqueIdentifier>{67ba20d6-7cb7-4f9a-a261-0cced4ec129c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_minimal_zero_gen">
+      <UniqueIdentifier>{865a60a3-5e86-4307-98b7-d8973a7e9166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_interned_data_zero_gen">
+      <UniqueIdentifier>{a3a05b06-902c-41f9-a601-ed19acfeadd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_gpu_zero_gen">
+      <UniqueIdentifier>{8c504d9f-094a-4dc1-b50d-fec618695783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_ftrace_zero_gen">
+      <UniqueIdentifier>{9308c28d-3793-45d6-b0b5-3655da8d8866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_filesystem_zero_gen">
+      <UniqueIdentifier>{c8b5692e-b508-4719-8fa5-3cd88de9f92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_etw_zero_gen">
+      <UniqueIdentifier>{cefeba94-487d-4f80-8349-bc890afd4a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_chrome_zero_gen">
+      <UniqueIdentifier>{e4bb7814-9d92-45e1-817a-c96837e43d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_android_zero_gen">
+      <UniqueIdentifier>{911b48e5-6471-4413-bba0-99e62d171815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen">
+      <UniqueIdentifier>{17a966ea-700c-41be-9261-94a952d68cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen">
+      <UniqueIdentifier>{24f41785-8a5b-47ba-9209-1f0b8c8748f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_ipc_wire_protocol_cpp_gen">
+      <UniqueIdentifier>{a6f1e720-15a1-4a4b-913c-babbf4ddd206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_ipc_ipc_gen">
+      <UniqueIdentifier>{5b459bea-3e5d-4a9d-8e7f-4f1e93cb4507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_ipc_cpp_gen">
+      <UniqueIdentifier>{41444cda-2192-40bc-9471-c5a0428cf945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_track_event_cpp_gen">
+      <UniqueIdentifier>{6f7785be-4747-40fc-b519-3162fbcf5c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_system_info_cpp_gen">
+      <UniqueIdentifier>{61cc9064-2ceb-4726-966e-78b34cbc9e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_sys_stats_cpp_gen">
+      <UniqueIdentifier>{6a45380f-7318-48a7-8cd7-52d9624f7458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_statsd_cpp_gen">
+      <UniqueIdentifier>{fdaeaf7d-024c-4c60-ab25-6c4a2a4f4826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_profiling_cpp_gen">
+      <UniqueIdentifier>{f901eb3b-1129-43ad-bdc2-396554f2647f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_process_stats_cpp_gen">
+      <UniqueIdentifier>{6db73e8b-5691-4a2c-afdd-afb9ea198e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_power_cpp_gen">
+      <UniqueIdentifier>{1d001242-dbaf-4b7f-b1e3-38fa361db024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_interceptors_cpp_gen">
+      <UniqueIdentifier>{0dc12ea9-d08e-46fd-af35-9d50b5563e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_inode_file_cpp_gen">
+      <UniqueIdentifier>{0eb621f4-cff4-43a9-8f6d-5230e81561d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_gpu_cpp_gen">
+      <UniqueIdentifier>{5cf6025d-dd32-4b6f-a582-c51ed522b2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_ftrace_cpp_gen">
+      <UniqueIdentifier>{e035cf41-a103-497a-87c2-1260f1efb186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_cpp_gen">
+      <UniqueIdentifier>{3b3d20c4-1e14-45f6-ada4-450d2ce81fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_cpp_gen\chrome">
+      <UniqueIdentifier>{3951b89f-0c1f-432c-a20e-7f562298654d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_android_cpp_gen">
+      <UniqueIdentifier>{5b5ed7dc-9e91-45f0-9ff3-5d1c92f99cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_config_android_cpp_gen\header">
+      <UniqueIdentifier>{cb63d803-9728-4835-89aa-d3e33f26c67b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_common_zero_gen">
+      <UniqueIdentifier>{80984cdd-5e05-4df8-b776-fceafba4d60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_ps_zero_gen">
+      <UniqueIdentifier>{3ebd347f-d9cb-4a03-86d0-e9d8a4c2925f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_statsd_zero_gen">
+      <UniqueIdentifier>{9cb72ccf-2aa1-4c5a-b8d6-324442a4dbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_sys_stats_zero_gen">
+      <UniqueIdentifier>{f4547faf-1baf-4416-b516-458071a11b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_system_info_zero_gen">
+      <UniqueIdentifier>{e6dc4563-0889-4758-a75c-70210334c501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gen\perfetto_protos_perfetto_trace_track_event_cpp_gen">
+      <UniqueIdentifier>{fef7cee7-62c5-4a4c-92a3-90bf0b7ec906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_android_internal_lazy_library_loader">
+      <UniqueIdentifier>{468e79e2-6235-4455-95db-39bedbfb0d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_android_stats_android_stats">
+      <UniqueIdentifier>{9c389d53-9224-407e-95ab-7c75e315d5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_base_base">
+      <UniqueIdentifier>{57920b06-74f7-4c77-a52e-d4369affac42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_base_unix_socket">
+      <UniqueIdentifier>{e63610ba-f887-4f0b-989a-7c1f2de477fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_base_version">
+      <UniqueIdentifier>{803dbbd3-bfbe-4477-872f-68e2dc251f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_ipc_client">
+      <UniqueIdentifier>{1deaa167-5101-477f-b8aa-b80f01caec37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_ipc_common">
+      <UniqueIdentifier>{b2e577a2-e919-42ea-97b8-c86da62f9d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_ipc_host">
+      <UniqueIdentifier>{cf758e3c-afe6-409b-8735-76cc801828c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_protozero_filtering_bytecode_parser">
+      <UniqueIdentifier>{84ef1e41-819d-462e-b66c-8db7c530d352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_protozero_filtering_message_filter">
+      <UniqueIdentifier>{08131ccb-e036-4d4c-b5cb-f046e2373159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_protozero_filtering_string_filter">
+      <UniqueIdentifier>{c2f87108-fcf7-4638-9eda-43e5c54afac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_protozero_protozero">
+      <UniqueIdentifier>{98ac0898-c74a-462c-9423-d321ec5fce33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_shared_lib_intern_map">
+      <UniqueIdentifier>{4db48488-74f2-468c-af48-fe3d3f1463d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_common">
+      <UniqueIdentifier>{f7065657-e7fb-45d8-bde6-2ac61a028a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_core_core">
+      <UniqueIdentifier>{cc13c173-b25d-484b-a30f-076530a55768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_in_process_backend">
+      <UniqueIdentifier>{88649a1e-30af-404a-83cb-e2136ea8d49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_ipc_common">
+      <UniqueIdentifier>{063d1111-21b1-4cf3-8ee5-abd2ebd7017f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_ipc_consumer_consumer">
+      <UniqueIdentifier>{17a18376-351c-44be-aa27-e5612a14f1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_ipc_default_socket">
+      <UniqueIdentifier>{c7913b0a-7c60-4b7f-9242-ebaceb782926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_ipc_producer_producer">
+      <UniqueIdentifier>{be3b289e-542e-4710-a446-a58320a6c9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_ipc_service_service">
+      <UniqueIdentifier>{14c4c157-9dbb-494d-8789-7ea5ebd7becb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_platform_impl">
+      <UniqueIdentifier>{89e12c81-52a9-47ce-be65-26b20a4dbe03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_service_service">
+      <UniqueIdentifier>{3a42304e-ed14-4f30-a48e-8fa54ae1da78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perfetto_src_tracing_system_backend">
+      <UniqueIdentifier>{b90835eb-dab6-4683-a27e-984df69a72f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\data_source.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\heap_buffer.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\pb_decoder.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\producer.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\stream_writer.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\thread_utils.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\track_event.cc">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\console_interceptor.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\data_source.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\debug_annotation.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\event_context.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\interceptor.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\platform.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\traced_value.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\tracing.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\tracing_policy.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\track.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\track_event_category_registry.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\track_event_legacy.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\track_event_state_tracker.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\virtual_destructors.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\checked_scope.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\interceptor_trace_writer.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\tracing_muxer_fake.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\tracing_muxer_impl.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\track_event_internal.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\track_event_interned_fields.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\default_platform.cc">
+      <Filter>perfetto_base_default_platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_energy_consumer_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_log_constants.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\builtin_clock.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\commit_data_request.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\data_source_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\ftrace_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\gpu_counter_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\interceptor_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\observable_events.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\perf_events.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\protolog_common.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\sys_stats_counters.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\trace_stats.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_capabilities.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_state.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\track_event_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_energy_consumer_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\android_log_constants.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\builtin_clock.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\commit_data_request.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\data_source_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\ftrace_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\gpu_counter_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\interceptor_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\observable_events.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\perf_events.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\protolog_common.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\sys_stats_counters.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\trace_stats.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_capabilities.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\tracing_service_state.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\common\track_event_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_game_intervention_list_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_input_event_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_log_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_polled_state_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_sdk_sysprop_guard_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\android_system_property_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\network_trace_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\packages_list_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\pixel_modem_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\protolog_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_layers_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_transactions_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\chrome_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\scenario_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\chrome\v8_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\etw\etw_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\data_source_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\interceptor_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\stress_test_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\test_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\trace_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\ftrace\ftrace_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_ftrace_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\gpu\gpu_counter_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_gpu_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\gpu\vulkan_memory_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_gpu_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\inode_file\inode_file_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_inode_file_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\interceptors\console_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_interceptors_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\power\android_power_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_power_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\process_stats\process_stats_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_process_stats_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\heapprofd_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\java_hprof_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\profiling\perf_event_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\statsd\atom_ids.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_statsd_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\statsd\statsd_tracing_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_statsd_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\sys_stats\sys_stats_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_sys_stats_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\system_info\system_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_system_info_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\config\track_event\track_event_config.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_config_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\consumer_port.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\producer_port.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\relay_port.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\consumer_port.ipc.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\producer_port.ipc.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\relay_port.ipc.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\ipc\wire_protocol.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_ipc_wire_protocol_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\winscope_extensions.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics\point.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics\rect.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\protolog.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\shell_transition.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_common.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_layers.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_transactions.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_game_intervention_list.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_log.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\android_system_property.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\camera_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\frame_timeline_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\gpu_mem_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\graphics_frame_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\initial_display_state.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\network_trace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\packages_list.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\android\pixel_modem_events.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_benchmark_metadata.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_metadata.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trace_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trigger.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\chrome\v8.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\etw\etw_event_bundle.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\filesystem\inode_file_map.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_filesystem_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\android_fs.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\bcl_exynos.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\binder.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\block.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cgroup.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\clk.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cma.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\compaction.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cpuhp.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\cros_ec.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dcvsh.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dma_fence.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dmabuf_heap.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\dpu.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\drm.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ext4.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\f2fs.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\fastrpc.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\fence.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\filemap.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event_bundle.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_stats.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\g2d.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\generic.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\google_icc_trace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\google_irm_trace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_mem.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_scheduler.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\hyp.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\i2c.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ion.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ipi.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\irq.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kgsl.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kmem.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\kvm.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\lowmemorykiller.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\lwis.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mali.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mdss.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\mm_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\net.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\oom.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\panel.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\perf_trace_counters.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\power.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\printk.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\raw_syscalls.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\regulator.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\rpm.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\samsung.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sched.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\scm.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sde.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\signal.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\skb.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sock.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\sync.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\synthetic.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\systrace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\task.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\tcp.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\test_bundle_wrapper.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\thermal.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\thermal_exynos.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\trusty.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\ufs.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\v4l2.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_gpu.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_video.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\vmscan.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ftrace\workqueue.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_counter_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_log.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\gpu_render_stage_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_api_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_memory_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\interned_data\interned_data.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_interned_data_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\clock_snapshot.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\system_info.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_uuid.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trigger.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\extension_descriptor.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\memory_graph.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\remote_clock_sync.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\test_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\test_extensions.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_packet.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\trace_packet_defaults.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ui_state.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\perfetto\perfetto_metatrace.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_perfetto_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\perfetto\tracing_service_event.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_perfetto_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\android_energy_estimation_breakdown.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\android_entity_state_residency.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\battery_counters.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\power\power_rails.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\deobfuscation.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\heap_graph.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\profile_common.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\profile_packet.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\profiling\smaps.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ps\process_stats.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ps_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\ps\process_tree.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_ps_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\statsd\ostats_data.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_statsd_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\statsd\statsd_atom.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_statsd_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\sys_stats\sys_stats.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_sys_stats_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\system_info\cpu_info.pbzero.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_system_info_zero_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_active_processes.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_application_state_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_content_settings_event_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_frame_reporter.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_histogram_sample.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_keyed_service.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_latency_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_legacy_ipc.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_message_pump.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_mojo_event_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_process_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_renderer_scheduler_state.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_thread_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_user_event.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_window_handle_event_info.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\counter_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\debug_annotation.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\log_message.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\pixel_modem.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\process_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\range_of_interest.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\screenshot.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\source_location.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\task_execution.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\thread_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\track_descriptor.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\track_event.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\android_internal\lazy_library_loader.cc">
+      <Filter>perfetto_src_android_internal_lazy_library_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\android_stats\statsd_logging_helper.cc">
+      <Filter>perfetto_src_android_stats_android_stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\android_utils.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\base64.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\crash_keys.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\ctrl_c_handler.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\event_fd.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\file_utils.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\getopt_compat.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\logging.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\metatrace.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\paged_memory.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\periodic_task.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\pipe.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\scoped_mmap.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\status.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\string_splitter.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\string_utils.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\string_view.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\subprocess.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\subprocess_posix.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\subprocess_windows.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\temp_file.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\thread_checker.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\thread_task_runner.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\thread_utils.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\time.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\unix_task_runner.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\utils.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\uuid.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\virtual_destructors.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\waitable_event.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\watchdog_posix.cc">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\unix_socket.cc">
+      <Filter>perfetto_src_base_unix_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base\version.cc">
+      <Filter>perfetto_src_base_version</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\client_impl.cc">
+      <Filter>perfetto_src_ipc_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\service_proxy.cc">
+      <Filter>perfetto_src_ipc_client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\buffered_frame_deserializer.cc">
+      <Filter>perfetto_src_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\deferred.cc">
+      <Filter>perfetto_src_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\virtual_destructors.cc">
+      <Filter>perfetto_src_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ipc\host_impl.cc">
+      <Filter>perfetto_src_ipc_host</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\filtering\filter_bytecode_parser.cc">
+      <Filter>perfetto_src_protozero_filtering_bytecode_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\filtering\message_filter.cc">
+      <Filter>perfetto_src_protozero_filtering_message_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\filtering\string_filter.cc">
+      <Filter>perfetto_src_protozero_filtering_string_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\field.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\gen_field_helpers.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\message.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\message_arena.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\packed_repeated_fields.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\proto_decoder.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\scattered_heap_buffer.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\scattered_stream_null_delegate.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\scattered_stream_writer.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\static_buffer.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protozero\virtual_destructors.cc">
+      <Filter>perfetto_src_protozero_protozero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shared_lib\intern_map.cc">
+      <Filter>perfetto_src_shared_lib_intern_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\trace_writer_base.cc">
+      <Filter>perfetto_src_tracing_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\clock_snapshots.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\id_allocator.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\in_process_shared_memory.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\null_trace_writer.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\shared_memory_abi.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\shared_memory_arbiter_impl.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\trace_packet.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\trace_writer_impl.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\core\virtual_destructors.cc">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\in_process_tracing_backend.cc">
+      <Filter>perfetto_src_tracing_in_process_backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\memfd.cc">
+      <Filter>perfetto_src_tracing_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\posix_shared_memory.cc">
+      <Filter>perfetto_src_tracing_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\shared_memory_windows.cc">
+      <Filter>perfetto_src_tracing_ipc_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\consumer\consumer_ipc_client_impl.cc">
+      <Filter>perfetto_src_tracing_ipc_consumer_consumer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\default_socket.cc">
+      <Filter>perfetto_src_tracing_ipc_default_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\producer\producer_ipc_client_impl.cc">
+      <Filter>perfetto_src_tracing_ipc_producer_producer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\service\consumer_ipc_service.cc">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\service\producer_ipc_service.cc">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\service\relay_ipc_service.cc">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\ipc\service\service_ipc_host_impl.cc">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\platform_posix.cc">
+      <Filter>perfetto_src_tracing_platform_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\platform_windows.cc">
+      <Filter>perfetto_src_tracing_platform_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\service\metatrace_writer.cc">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\service\packet_stream_validator.cc">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\service\trace_buffer.cc">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\service\tracing_service_impl.cc">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\system_tracing_backend.cc">
+      <Filter>perfetto_src_tracing_system_backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\protos\perfetto\trace\track_event\chrome_compositor_scheduler_state.gen.cc">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tracing\internal\tracing_backend_fake.cc">
+      <Filter>perfetto_src_tracing_client_api_without_backends\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\shared_lib\stream_writer.h">
+      <Filter>perfetto_src_shared_lib_shared_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_game_intervention_list_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_input_event_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_log_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_polled_state_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_sdk_sysprop_guard_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\android_system_property_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\network_trace_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\packages_list_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\pixel_modem_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\protolog_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_layers_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\android\surfaceflinger_transactions_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_android_cpp_gen\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\v8_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\chrome_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\chrome\scenario_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen\chrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\etw\etw_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\data_source_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\interceptor_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\stress_test_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\test_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\trace_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\ftrace\ftrace_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_ftrace_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\gpu\gpu_counter_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_gpu_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\gpu\vulkan_memory_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_gpu_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\inode_file\inode_file_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_inode_file_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\interceptors\console_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_interceptors_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\power\android_power_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_power_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\process_stats\process_stats_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_process_stats_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\heapprofd_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\java_hprof_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\profiling\perf_event_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_profiling_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\statsd\atom_ids.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_statsd_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\statsd\statsd_tracing_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_statsd_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\sys_stats\sys_stats_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_sys_stats_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\system_info\system_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_system_info_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\config\track_event\track_event_config.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_config_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\consumer_port.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\producer_port.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\relay_port.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\consumer_port.ipc.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\producer_port.ipc.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\relay_port.ipc.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_ipc_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\ipc\wire_protocol.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_ipc_wire_protocol_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\winscope_extensions.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics\point.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics\rect.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_common_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\protolog.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\shell_transition.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_common.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_layers.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\surfaceflinger_transactions.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_winscope_regular_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_game_intervention_list.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_log.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\android_system_property.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\camera_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\frame_timeline_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\gpu_mem_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\graphics_frame_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\initial_display_state.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\network_trace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\packages_list.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\android\pixel_modem_events.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_android_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_benchmark_metadata.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_metadata.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trace_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\chrome_trigger.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\chrome\v8.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_chrome_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\etw\etw_event_bundle.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_etw_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\filesystem\inode_file_map.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_filesystem_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\android_fs.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\bcl_exynos.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\binder.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\block.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cgroup.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\clk.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cma.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\compaction.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cpuhp.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\cros_ec.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dcvsh.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dma_fence.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dmabuf_heap.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\dpu.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\drm.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ext4.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\f2fs.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\fastrpc.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\fence.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\filemap.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_event_bundle.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ftrace_stats.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\g2d.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\generic.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\google_icc_trace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\google_irm_trace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_mem.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\gpu_scheduler.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\hyp.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\i2c.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ion.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ipi.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\irq.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kgsl.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kmem.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\kvm.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\lowmemorykiller.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\lwis.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mali.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mdss.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\mm_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\net.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\oom.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\panel.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\perf_trace_counters.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\power.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\printk.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\raw_syscalls.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\regulator.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\rpm.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\samsung.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sched.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\scm.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sde.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\signal.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\skb.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sock.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\sync.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\synthetic.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\systrace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\task.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\tcp.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\test_bundle_wrapper.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\thermal.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\thermal_exynos.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\trusty.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\ufs.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\v4l2.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_gpu.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\virtio_video.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\vmscan.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ftrace\workqueue.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ftrace_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_counter_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_log.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\gpu_render_stage_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_api_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\gpu\vulkan_memory_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_gpu_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\interned_data\interned_data.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_interned_data_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\clock_snapshot.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\system_info.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_uuid.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trigger.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\extension_descriptor.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\memory_graph.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\remote_clock_sync.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\test_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\test_extensions.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_packet.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\trace_packet_defaults.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ui_state.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_non_minimal_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\perfetto\perfetto_metatrace.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_perfetto_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\perfetto\tracing_service_event.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_perfetto_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\android_energy_estimation_breakdown.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\android_entity_state_residency.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\battery_counters.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\power\power_rails.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_power_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\deobfuscation.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\heap_graph.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\profile_common.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\profile_packet.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\profiling\smaps.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_profiling_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ps\process_stats.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ps_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\ps\process_tree.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_ps_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\statsd\ostats_data.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_statsd_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\statsd\statsd_atom.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_statsd_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\sys_stats\sys_stats.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_sys_stats_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\system_info\cpu_info.pbzero.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_system_info_zero_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_active_processes.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_application_state_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_content_settings_event_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_frame_reporter.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_histogram_sample.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_keyed_service.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_latency_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_legacy_ipc.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_message_pump.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_mojo_event_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_process_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_renderer_scheduler_state.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_thread_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_user_event.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_window_handle_event_info.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\counter_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\debug_annotation.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\log_message.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\pixel_modem.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\process_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\range_of_interest.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\screenshot.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\source_location.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\task_execution.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\thread_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\track_descriptor.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\track_event.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\android_internal\lazy_library_loader.h">
+      <Filter>perfetto_src_android_internal_lazy_library_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\android_stats\perfetto_atoms.h">
+      <Filter>perfetto_src_android_stats_android_stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\android_stats\statsd_logging_helper.h">
+      <Filter>perfetto_src_android_stats_android_stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base\vm_sockets.h">
+      <Filter>perfetto_src_base_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ipc\client_impl.h">
+      <Filter>perfetto_src_ipc_client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ipc\buffered_frame_deserializer.h">
+      <Filter>perfetto_src_ipc_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ipc\host_impl.h">
+      <Filter>perfetto_src_ipc_host</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\protozero\filtering\filter_bytecode_parser.h">
+      <Filter>perfetto_src_protozero_filtering_bytecode_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\protozero\filtering\message_filter.h">
+      <Filter>perfetto_src_protozero_filtering_message_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\protozero\filtering\string_filter.h">
+      <Filter>perfetto_src_protozero_filtering_string_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\shared_lib\intern_map.h">
+      <Filter>perfetto_src_shared_lib_intern_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\core\id_allocator.h">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\core\in_process_shared_memory.h">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\core\null_trace_writer.h">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\core\shared_memory_arbiter_impl.h">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\core\trace_writer_impl.h">
+      <Filter>perfetto_src_tracing_core_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\memfd.h">
+      <Filter>perfetto_src_tracing_ipc_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\consumer\consumer_ipc_client_impl.h">
+      <Filter>perfetto_src_tracing_ipc_consumer_consumer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\producer\producer_ipc_client_impl.h">
+      <Filter>perfetto_src_tracing_ipc_producer_producer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\service\consumer_ipc_service.h">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\service\producer_ipc_service.h">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\service\relay_ipc_service.h">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\ipc\service\service_ipc_host_impl.h">
+      <Filter>perfetto_src_tracing_ipc_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\service\metatrace_writer.h">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\service\packet_stream_validator.h">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\service\trace_buffer.h">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tracing\service\tracing_service_impl.h">
+      <Filter>perfetto_src_tracing_service_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\protos\perfetto\trace\track_event\chrome_compositor_scheduler_state.gen.h">
+      <Filter>gen\perfetto_protos_perfetto_trace_track_event_cpp_gen</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

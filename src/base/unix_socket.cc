@@ -26,6 +26,7 @@
 #include "perfetto/ext/base/string_utils.h"
 
 #if PERFETTO_BUILDFLAG(PERFETTO_OS_WIN)
+#define WIN32_LEAN_AND_MEAN
 // The include order matters on these three Windows header groups.
 #include <Windows.h>
 
