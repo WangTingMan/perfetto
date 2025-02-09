@@ -18,6 +18,8 @@
 // interceptor.
 
 #include "trace_categories.h"
+#include <perfetto/tracing/console_interceptor.h>
+#include <protos/perfetto/config/interceptor_config.gen.h>
 
 #include <chrono>
 #include <thread>
